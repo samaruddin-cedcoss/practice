@@ -10,15 +10,16 @@ fun main() {
 //     val patternprint="@"
 // 	pattern(rowLayer,columnLayer,patternprint)
     
-    
+
+fun looping(){
     //for loop test
-//     for (i in 1.downTo(9)) {
-//     print(i) // Print 123456789
-//     }val diceRoll = myFirstDice.roll()
-   
-//     for(c in 'a'..'e'){
-//     print(c)
-//     }
+     for (i in 1.downTo(9)) {
+     print(i) // Print 123456789
+     }   
+     for(c in 'a'..'e'){
+     print(c)
+     }
+}
     
     
 	//Random dice roller
