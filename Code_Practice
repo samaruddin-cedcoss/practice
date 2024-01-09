@@ -1,0 +1,101 @@
+Code practice
+
+fun main() {
+    
+    //When case sample
+//     check()
+//     var a=8
+//     val rowLayer=5
+//     val columnLayer=5
+//     val patternprint="@"
+// 	pattern(rowLayer,columnLayer,patternprint)
+    
+    
+    //for loop test
+//     for (i in 1.downTo(9)) {
+//     print(i) // Print 123456789
+//     }val diceRoll = myFirstDice.roll()
+   
+//     for(c in 'a'..'e'){
+//     print(c)
+//     }
+    
+    
+	//Random dice roller
+//      val diceRange = 1..6
+//      val randomNumber=diceRange.random()
+//      println("Random Number is $randomNumber")
+     
+     
+//     val myFirstDice = Dice(6)
+//     val diceRoll = myFirstDice.roll()
+//     println("Your ${myFirstDice.sides} sided dice rolled ${diceRoll}!")
+//     //we can call the class method instead of saving the return value in a seperate variable and then print 
+//     //println("Your ${myFirstDice.sides} sided dice rolled ${myFirstDice.roll()}!")
+    
+//     val mySecondDice= Dice(20)
+//     println("Your ${mySecondDice.sides} sided dice rolled ${mySecondDice.roll()}!")
+    
+    //After refactorinng the above code, It looks like
+    val myFirstDice = Dice(6)
+    println("Your ${myFirstDice.sides} sided dice rolled ${myFirstDice.roll()}!")
+    
+    val mySecondDice = Dice(20)
+    println("Your ${mySecondDice.sides} sided dice rolled ${mySecondDice.roll()}!")
+  
+  //Function invokation
+  print(sum(5,6)) 
+ }
+
+class Dice(val sides:Int){
+    
+    fun roll() : Int {
+     	//val randomNumber = (1..sides).random()
+        //return randomNumber
+        //adopting good practice using changes in return statement
+        return (1..sides).random()
+    }
+}
+
+
+    //argumented function for patter Printing
+//     fun pattern(rowLayer:Int,columnLayer:Int,patternprint:String)  {
+//         repeat(rowLayer){
+//             repeat(columnLayer){
+//                 print(patternprint)
+//             }
+//             println()
+//         }
+//     }
+    
+    
+    //when case function
+//     fun check(){
+//         print("Enter any month number")
+//         var input=readLine()!!
+//         val monthyear=input.toInt()
+//         val result  fun check(){
+//         print("Enter any month number")
+//         var input=readLine()!!
+//         val monthyear=input.toInt()
+//         val result=when(monthyear){
+//             1->"Jan"
+//             2->"Feb"
+//             3->"March"
+//             4->"April"
+//             5->"May"
+//             6->"June"
+//             7->"July"
+//             8->"August"
+//             9->"September"
+//             10->"October"
+//             11->"November"
+//             12->"December"
+//             else->"Not a valid input"
+//         }
+//         println(result)
+//     }
+//     
+    //function as an expression
+   fun sum(a: Int, b: Int) = a + b
+
